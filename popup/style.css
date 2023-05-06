@@ -8,17 +8,18 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: url(/popup/img3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   height: 100vh;
   border: 1px solid #000;
 }
 
-.counter h1 {
-  font-size: 5rem;
+h1 {
+  font-size: 2rem;
   text-align: center;
-  padding-bottom: 5rem;
+  padding: 4rem 0;
 }
 
 a {
@@ -30,4 +31,44 @@ a {
   padding: 0.7rem 2rem;
   border-radius: 1rem;
   margin: 0 1rem;
+  display: inline-block;
+}
+
+.close{
+  top: 50%;
+  margin: 30% 37%;
+  background: #000;
+  font-weight: 800;
+}
+
+.open-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #272727;
+  height: 40%;
+  width: 30%;
+  border-radius: 1rem;
+}
+
+.box h2 {
+  text-align: center;
+  color: #9f8cff;
+  background: #000;
+  border-radius: 1rem 1rem 0rem 0rem;
+  padding: 1rem 0;
+}
+
+
+.hidden {
+  display: none;
 }
